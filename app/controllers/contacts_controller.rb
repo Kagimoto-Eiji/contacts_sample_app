@@ -16,10 +16,12 @@ class ContactsController < ApplicationController
     end
   end
 
+  private
+
   # IPアドレスをパラメータに追加
   def contact_params
     params.require(:contact)
-          .permit(:name, :email, :contact)
+          .permit(:name, :email, :content)
           .merge(remote_ip: request.remote_ip)
   end
 end
