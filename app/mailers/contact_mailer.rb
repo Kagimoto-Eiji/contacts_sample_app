@@ -1,5 +1,5 @@
 class ContactMailer < ApplicationMailer
-  ADMIN_EMAIL = 'rails.sample.1017@gmail.com'
+  ADMIN_EMAIL = 'admin@example.com'
 
   def user_email(contact)
     @contact = contact
